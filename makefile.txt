@@ -1,0 +1,20 @@
+ahmadHassanA3: sortID.o loadTweetsFromFile.o saveTweetsToFile.o deleteTweet.o countStopWords.o searchTweetsByKeyword.o displayTweets.o createTweet.o ahmadHassanA3Main.o 
+	gcc sortID.o loadTweetsFromFile.o saveTweetsToFile.o deleteTweet.o countStopWords.o searchTweetsByKeyword.o displayTweets.o createTweet.o ahmadHassanA3Main.o -o ahmadHassanA3
+sortID.o: sortID.c ahmadHassanA3.h
+	gcc -Wall -std=c99 -c sortID.c
+loadTweetsFromFile.o: loadTweetsFromFile.c ahmadHassanA3.h
+	gcc -Wall -std=c99 -c loadTweetsFromFile.c
+saveTweetsToFile.o: saveTweetsToFile.c ahmadHassanA3.h
+	gcc -Wall -std=c99 -c saveTweetsToFile.c
+deleteTweet.o: deleteTweet.c ahmadHassanA3.h 
+	gcc -Wall -std=c99 -c deleteTweet.c
+countStopWords.o: countStopWords.c ahmadHassanA3.h
+	gcc -Wall -std=c99 -c countStopWords.c
+searchTweetsByKeyword.o: searchTweetsByKeyword.c ahmadHassanA3.h
+	gcc -Wall -std=c99 -c searchTweetsByKeyword.c
+displayTweets.o: displayTweets.c ahmadHassanA3.h
+	gcc -Wall -std=c99 -c displayTweets.c
+createTweet.o: createTweet.c ahmadHassanA3.h
+	gcc -Wall -std=c99 -c createTweet.c
+main.o: ahmadHassanA3Main.c ahmadHassanA3.h
+	gcc -Wall -std=c99 -c ahmadHassanA3Main.c
